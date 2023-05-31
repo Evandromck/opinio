@@ -137,3 +137,75 @@ Opinio é uma plataforma intuitiva que permite a criação rápida de enquetes p
      -   Incluir as referências utilizadas na criação da documentação da aplicação de enquetes, como documentações oficiais de tecnologias utilizadas, artigos relevantes e outras fontes de informação.  
 
 </details>
+
+
+backlog do projeto 
+
+
+ 1. Configuração do ambiente de desenvolvimento   
+
+       - [ ] Configurar o ambiente de desenvolvimento local para o NestJS e o ReactJs.
+
+       - [ ] Configurar o PostgreSQL no ambiente local para testes.
+
+  2. Configuração inicial do projeto  
+
+       - [ ] Criar o projeto NestJS com TypeScript.
+
+       - [ ] Configurar o TypeORM para a conexão com o PostgreSQL.  
+
+       - [ ] Configurar as rotas iniciais da API para criar, listar, atualizar e excluir enquetes.
+
+  3. Desenvolvimento do CRUD de enquetes
+
+       - [ ]  Implementar a criação de enquetes na API, incluindo a associação de perguntas e respostas.
+
+       - [ ]  Implementar a listagem de todas as enquetes.
+
+       - [ ]  Implementar a atualização de enquetes existentes.
+  
+       - [ ]  Implementar a exclusão de enquetes.
+
+   4. Implementação do Swagger
+
+       - [ ] Integrar o Swagger na API para gerar documentação automática da API.
+  
+       - [ ]  Documentar todas as rotas, parâmetros e respostas da API.
+
+   5. Configuração do ambiente de produção no GCP
+
+        - [ ]  Configurar o ambiente de produção no Google Cloud Platform (GCP).
+
+        - [ ]  Configurar as Funções Cloud para hospedar a API no GCP.
+
+        - [ ]  Configurar o PostgreSQL no GCP usando o serviço de Banco de Dados SQL.
+
+   6. Implementação do front-end em ReactJs
+   
+        - [ ]  Configurar o projeto ReactJs.
+
+        - [ ]  Criar componentes para listar as enquetes.
+
+        - [ ]  Integrar a API para exibir as enquetes salvas no banco de dados.
+
+   7. Testes e validação
+
+        - [ ]  Testar todas as funcionalidades da API e do front-end.
+
+        - [ ]  Realizar testes de integração para garantir o bom funcionamento da aplicação.
+
+        - [ ]  Validar se todas as informações estão sendo salvas corretamente no banco de dados.
+
+   8. Implantação e hospedagem
+
+        - [ ]  Implantar a API e o front-end no GCP usando as Funções Cloud.
+
+        - [ ]  Configurar o ambiente de hospedagem para disponibilizar o front-end em ReactJs.
+
+  9. Documentação e finalização
+
+        - [ ]  Documentar todos os passos necessários para configurar e executar o projeto.
+
+        - [ ]  Criar um guia de uso da API e do front-end.
+
+       - [ ]  Revisar todo o projeto e corrigir possíveis erros ou melhorias.
