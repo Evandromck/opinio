@@ -1,4 +1,4 @@
-## Opinio
+## OPINIO
 
 Opinio é uma plataforma intuitiva que permite a criação rápida de enquetes personalizadas. Com recursos flexíveis e uma interface amigável, os usuários podem associar perguntas e respostas, compartilhar as enquetes e analisar os resultados de maneira fácil. Obtenha insights valiosos e tome decisões informadas com Opinio. Experimente agora mesmo!
 
