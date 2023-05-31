@@ -14,7 +14,7 @@ Opinio é uma plataforma intuitiva que permite a criação rápida de enquetes p
 -   1.1 Objetivo
      -   Criar uma aplicação de enquetes onde os usuários possam criar suas próprias enquetes e associar perguntas e respostas.
 -   1.2 Escopo
-     -   Desenvolver uma aplicação que permita aos usuários criar, editar, excluir e compartilhar enquetes, associando perguntas e respostas..
+     -   Desenvolver uma aplicação que permita aos usuários criar, editar, excluir e compartilhar enquetes, associando perguntas e respostas.
 -   1.3 Definições, acrônimos e abreviações
      -   Definir os termos, acrônimos e abreviações utilizados ao longo da documentação, a fim de facilitar a compreensão do projeto e evitar ambiguidades.
 </details>
