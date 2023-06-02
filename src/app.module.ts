@@ -1,23 +1,11 @@
-import { TypeOrmModule } from '@nestjs/typeorm';
 import { Module } from '@nestjs/common';
-import { AppController } from './app.controller';
-import { AppService } from './app.service';
+import { PersonModule } from './modules/person.modules';
+import { TypeOrmModule } from '@nestjs/typeorm';
 
 @Module({
-  imports: [
-    TypeOrmModule.forRoot(),
-  ],
-  controllers: [],
-  providers: [],
+  imports:[PersonModule, TypeOrmModule.forRoot()],//forRoot ele ira procurar um arquivo vhamado ormconfig.json
 })
-export class AppModule {}
+export class AppModule{};
 
 
 
-
-@Module({
-  imports: [],
-  controllers: [AppController],
-  providers: [AppService],
-})
-export class AppModule2 {} 
