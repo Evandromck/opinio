@@ -1,17 +1,17 @@
-import { Column, Entity, PrimaryGeneratedColumn } from 'typeorm'
-
+import { Entity, Column, PrimaryGeneratedColumn } from 'typeorm'
 @Entity()
 export class PersonModel {
-  @PrimaryGeneratedColumn()//ira acrescentar id 
+  @PrimaryGeneratedColumn()
   id: number;
-
   @Column({ length: 120 })
   name: string;
 
   @Column('int')
   age: number;
 
+  @Column('int')
+
   @Column({ length: 255 })
-  email: string;
+  email:string;
 }
 

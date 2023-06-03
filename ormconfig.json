@@ -1,10 +1,6 @@
 {
-  "type": "sqlite",
-  "host": "localhost",
-  "port": 5432,
-  "username": "seu-usuario",
-  "password": "sua-senha",
   "database": "./db.sql",
-  "entities": ["dist/**/*.model.js"],
-  "synchronize": true 
+  "type": "better-sqlite3",
+  "synchronize": true,
+  "entities": ["dist/**/*model.js"]
 }

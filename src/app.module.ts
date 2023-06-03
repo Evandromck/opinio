@@ -1,11 +1,21 @@
 import { Module } from '@nestjs/common';
-import { PersonModule } from './modules/person.modules';
 import { TypeOrmModule } from '@nestjs/typeorm';
+import { PersonModule } from './modules/person.module';
+import * as path from 'path';
 
 @Module({
-  imports:[PersonModule, TypeOrmModule.forRoot()],//forRoot ele ira procurar um arquivo vhamado ormconfig.json
+  imports: [
+    PersonModule,
+    TypeOrmModule.forRootAsync({
+      useFactory: () => ({
+        type: 'better-sqlite3',
+        database: path.resolve(__dirname, '..', 'db.sql'),
+        synchronize: true,
+        entities: [path.resolve(__dirname, '..', 'dist', '**', '*model.js')],
+      }),
+    }),
+  ],
 })
-export class AppModule{};
-
+export class AppModule {}
 
 
