@@ -1,6 +1,7 @@
 import { Module } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { PersonModule } from './modules/person.module';
+import { UsersModule } from './users/users.module';
 import * as path from 'path';
 
 @Module({
@@ -13,7 +14,7 @@ import * as path from 'path';
         synchronize: true, // Habilita a sincronização automática do TypeORM
         entities: [path.resolve(__dirname, '..', 'dist', '**', '*model.js')], // Define os caminhos das entidades do TypeORM
       }),
-    }),
+    }), UsersModule,
   ],
 })
 export class AppModule {} // Define o módulo AppModule

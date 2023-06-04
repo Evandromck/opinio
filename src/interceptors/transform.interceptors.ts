@@ -6,13 +6,21 @@ import { Injectable, NestInterceptor, CallHandler, ExecutionContext } from "@nes
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 
-export interface Response<T>{
+export interface Response<T> {
   data: T;
 }
 
 @Injectable()
 export class TransformaInterceptor<T> implements NestInterceptor<T, Response<T>> {
   intercept(context: ExecutionContext, next: CallHandler<T>): Observable<Response<T>> {
-    return next.handle().pipe(map((data) => ({ data })));
+    // Intercepta a solicitação antes de ser manipulada pelo controlador
+    // Recebe o contexto da execução e o próximo manipulador de chamada
+
+    // Manipula a próxima chamada na cadeia de interceptores
+    return next.handle().pipe(
+      // Executa uma transformação nos dados retornados pelo próximo manipulador
+      map((data) => ({ data }))
+    );
   }
 }
+
