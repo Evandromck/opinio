@@ -6,63 +6,61 @@ import { PersonSchema } from "src/schemas/person.schema";
 
 @Controller('/person')
 export class PersonController {
-  constructor(@InjectRepository(PersonModel) private model: Repository<PersonModel>,){}
+  constructor(@InjectRepository(PersonModel) private model: Repository<PersonModel>) {}
 
-  //--------------------Criando usuarios -----------------------
-
+  // Cria um novo usuário
   @Post()
-  public async create(@Body() body: PersonSchema): Promise<{data: PersonModel}> {
-    const personCreated = await this.model.save(body) //salvando no banco 
-    return {data: personCreated}
+  public async create(@Body() body: PersonSchema): Promise<PersonModel> {    
+    return this.model.save(body);
   }
 
-   //-----------------Buscando usuarios pelo id------------------
-
+  // Obtém um único usuário pelo ID
   @Get(':id')
-  public async getOne( @Param('id', ParseIntPipe) id: number, ): Promise<{data: PersonModel}> {
-    const person = await this.model.findOne({ where: {id} });
+  public async getOne(@Param('id', ParseIntPipe) id: number): Promise<PersonModel> {
+    const person = await this.model.findOne({ where: { id } });
     
-    if (!person){
-      throw new NotFoundException(`Usuário não encontrado com id fornecido ${id}`)
+    if (!person) {
+      throw new NotFoundException(`Usuário não encontrado com o ID fornecido ${id}`);
     }
-    return {data: person};
+    
+    return person;
   }
-  //-----------------Buscando todos os usuarios------------------
 
+  // Obtém todos os usuários
   @Get()
-  public async getAll(): Promise<{ data: PersonModel[]}> {
-    const list = await this.model.find();
-    return { data: list}
+  public async getAll(): Promise<PersonModel[]> {
+    return this.model.find();
   }
-  //--------------------Atualizando Usuario------------------
+
+  // Atualiza um usuário existente pelo ID
   @Put(':id')
   public async update(
     @Param('id', ParseIntPipe) id: number,
     @Body() body: PersonSchema,
-  ): Promise<{data: PersonModel}> {
-    const person = await this.model.findOne({ where: {id}});
+  ): Promise<PersonModel> {
+    const person = await this.model.findOne({ where: { id } });
 
-    if(!person){
-       throw new NotFoundException(`Usuário não encontrado com id fornecido ${id}`)  
+    if (!person) {
+       throw new NotFoundException(`Usuário não encontrado com o ID fornecido ${id}`);  
     }
-    await this.model.update({id}, body);
-    return {data: await this.model.findOne({where: {id} }) };
+    
+    await this.model.update({ id }, body);
+    return this.model.findOne({ where: { id } });
   }
 
-//--------------------Deletando Usuario pelo id------------------
-
+  // Deleta um usuário pelo ID
   @Delete(':id')
   public async delete(
     @Param('id', ParseIntPipe) id: number,
-  ): Promise<{ data: string }> {
-    const person = await this.model.findOne({where: {id}});
+  ): Promise<string> {
+    const person = await this.model.findOne({ where: { id } });
    
-    if(!person){
-      throw new NotFoundException(`Usuário não encontrado com id fornecido ${id}`);
+    if (!person) {
+      throw new NotFoundException(`Usuário não encontrado com o ID fornecido ${id}`);
     }
 
     await this.model.delete(id);
 
-    return {data: `Usuário id ${id} foi deletado!`}
+    return `Usuário com o ID ${id} foi deletado!`;
   }
 }
