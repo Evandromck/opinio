@@ -3,7 +3,9 @@ import { InjectRepository } from '@nestjs/typeorm';
 import { Repository } from 'typeorm';
 import { PersonModel } from 'src/models/person.model';
 import { PersonSchema } from "src/schemas/person.schema";
+import { ApiTags } from "@nestjs/swagger";
 
+@ApiTags('Enquete')
 @Controller('/person')
 export class PersonController {
   constructor(@InjectRepository(PersonModel) private model: Repository<PersonModel>) {}
