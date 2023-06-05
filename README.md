@@ -3,6 +3,23 @@
 Opinio é uma plataforma intuitiva que permite a criação rápida de enquetes personalizadas. Com recursos flexíveis e uma interface amigável, os usuários podem associar perguntas e respostas, compartilhar as enquetes e analisar os resultados de maneira fácil. Obtenha insights valiosos e tome decisões informadas com Opinio. Experimente agora mesmo!
 
 ![image](https://github.com/Evandromck/sonic-meet-main/assets/64655153/cbf0b65f-d30b-467e-b2e9-25f3cc6d3253)
+<br/>
+<br/>
+## Planejamento do Projeto
+![image](https://github.com/Evandromck/opinio/assets/64655153/accbb4eb-80d6-49b8-9116-273f4469b0d7)
+
+https://github.com/users/Evandromck/projects/5/views/1?visibleFields=%5B%22Title%22%2C%22Assignees%22%2C%22Status%22%2C45360960%2C45360961%2C%22Linked+pull+requests%22%2C%22Labels%22%2C%22Repository%22%5D
+
+Olá! Gostaria de falar um pouco sobre os Projetos no GitHub. O Projects é uma ferramenta adaptável e flexível que me ajudou a planejar e acompanhar o trabalho de forma eficiente.
+
+Um projeto no GitHub é como uma planilha adaptável que se integra aos problemas e solicitações pull, permitindo que eu organize e monitore meu trabalho de maneira eficaz. Posso criar e personalizar várias exibições, filtrando, classificando e agrupando meus problemas e solicitações pull. Além disso, posso visualizar o trabalho por meio de gráficos configuráveis ​​e adicionar campos personalizados para rastrear metadados específicos da minha equipe.
+
+A melhor parte é que os projetos são construídos a partir dos problemas e pull requests que adiciono, criando referências diretas entre o projeto e o trabalho real. As informações são sincronizadas automaticamente, o que significa que as atualizações que faço nos problemas ou solicitações pull são refletidas instantaneamente no projeto. Por exemplo, se eu alterar o responsável em um problema no projeto, essa alteração será mostrada no problema original. Além disso, posso agrupar meu projeto por responsável e arrastar as tarefas entre os grupos para fazer alterações rápidas na atribuição.
+
+Uma das coisas mais interessantes é a capacidade de adicionar campos personalizados aos itens do projeto. Isso me permite adicionar metadados extras aos problemas, pull requests e até mesmo aos rascunhos de problemas. Posso usar campos personalizados para rastrear informações como datas de entrega, níveis de complexidade, prioridades e notas adicionais. Isso cria uma visão mais rica dos atributos dos itens do projeto.
+
+Além disso, o GitHub oferece opções de automação para os projetos. Posso definir fluxos de trabalho integrados para automatizar a configuração de campos quando os itens são adicionados ou alterados. Também tenho a possibilidade de configurar meu projeto para arquivar automaticamente os itens que atendem a determinados critérios ou adicionar itens automaticamente de um repositório com base em critérios definidos. Essa automação ajuda a manter meu projeto atualizado e organizado de forma eficiente.
+
 
 ## Requisitos - Aplicação de Enquetes Simplificadas
 
