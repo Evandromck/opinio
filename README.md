@@ -204,7 +204,7 @@ Como de costume, o Nest resolve toda a parte chata da configuração e a gente s
 - `swagger-ui-express`
 
 ```bash
-npm install --save @nestjs/swagger swagger-ui-express
+yarn add --save @nestjs/swagger swagger-ui-express
 ```
 
 > Também é possível usar o Swagger no Nest com o Fastify, basta usar a lib do swagger `fastify-swagger`
@@ -224,7 +224,7 @@ async function bootstrap() {
   const app = await NestFactory.create(AppModule);
 
   const config = new DocumentBuilder()
-    .setTitle('Documentação com Swagger - Fábrica de Sinapse')
+    .setTitle('Documentação com Swagger - Evandro Araujo')
     .setDescription(
       'O Swagger (aka OpenApi) é uma biblioteca muito conhecida no universo backend, estando disponível para diversas linguagens e frameworks. Ela gera um site interno no seu backend que descreve, com muitos detalhes, cada endpoint e estrutura de entidades presentes na sua aplicação.',
     )
@@ -246,16 +246,16 @@ bootstrap();
 Execute a aplicação
 
 ```bash
-npm run start:dev
+yarn start:dev
 ```
 
 Abra a URL no seu navegador
 
-http://localhost:3000/api/
+http://localhost:8080/api/
 
 Pronto!
 
-![Documentação com Swagger](images/image-20211023131152053.png)
+![Image](https://github.com/Evandromck/opinio/assets/64655153/607e9397-f9ca-4d84-93ea-d7adfcef7645)
 
 ## Tags
 
@@ -285,17 +285,17 @@ export class UsersController {
 
 Salve o arquivo para que o Nest recarregue a aplicação automaticamente e atualize a página do swagger.
 
-![Endpoints de Users](images/image-20211023124429471.png)
+![Image](https://github.com/Evandromck/opinio/assets/64655153/607e9397-f9ca-4d84-93ea-d7adfcef7645)
 
 ## Testando requisições
 
 Para testar a requisições, basta clicar em cima de um dos endpoints desejados para visualizar a sua estrutura.
 
-![Endpoint de GET /users](images/image-20211023124624314.png)
+![Image](https://github.com/Evandromck/opinio/assets/64655153/e791f35f-3a88-421a-b143-47dcae73ecd1)
 
 Clique no botão `Try it out` e depois em `Execute` para realizar a requisição HTTP.
 
-![Requisição HTTP em GET /users](images/image-20211023124718186.png)
+![Image](https://github.com/Evandromck/opinio/assets/64655153/0d9c0c28-e7f3-4b4b-978f-69e4b1105fea)
 
 ## Detalhando um pouco melhor os endpoints
 
@@ -349,72 +349,18 @@ export class CreateUserDto {
 
 Com isso, o resultado é incrível!
 
-![Exemplos no Request body](images/image-20211023125815253.png)
+![Image](https://github.com/Evandromck/opinio/assets/64655153/e791f35f-3a88-421a-b143-47dcae73ecd1)
 
-![Schemas com exemplos e descrição](images/image-20211023125857466.png)
 
-## Melhorando a declaração das entidades
 
-E como eu não me contento em deixar vocês com apenas a implementação básica, preciso mostrar uma implementação um pouco mais declarativa das entidades 😃
 
-Em vez de utilizar os `decorators` para anotar cada propriedade, você pode adicionar comentários antes de cada propriedade e o Swagger irá utilizar as informações dos comentários para exibir na documentação de endpoints.
 
-Dessa forma:
-
-`src/users/dto/create-user.dto.ts`
-
-```typescript
-export class CreateUserDto {
-  /**
-   * O nome será utilizado para qualquer coisa (Perfil, Home Page, etc) que precise exibir
-   * informações da pessoa conectada.
-   * @example Evandro Araujo
-   */
-  name: string;
-
-  /**
-   * O e-mail é necessário apra o login, mas não necessariamente precisa ser o mesmo e-mail da
-   * rede social que estiver conectada. Login sem rede social precisa de uma senha.
-   * @example email@email.com
-   */
-  email: string;
-
-  /**
-   * É possível conectar com redes sociais sem uma senha, mas para login usando o e-mail diretamente
-   * é necessário informar uma senha.
-   * @example 123@abc
-   */
-  password?: string;
-}
-```
-
-Para isso, precisamos ativar a opção `introspectComments` de configuração do `@nestjs/swagger` no arquivo `nest-cli.json`.
-
-`nest-cli.json`
-
-```json
-{
-  "collection": "@nestjs/schematics",
-  "sourceRoot": "src",
-  "compilerOptions": {
-    "plugins": [
-      {
-        "name": "@nestjs/swagger",
-        "options": {
-          "classValidatorShim": false,
-          "introspectComments": true
-        }
-      }
-    ]
-  }
-}
-```
 
 > Após fazer isso, precisamos encerrar a aplicação do Nest e executar novamente, para que o mecanismo seja ativado por completo.
 
 E, pronto! Teremos o mesmo resultado 🚀
 
-![Schemas com exemplos e descrição](images/image-20211023125857466.png)
+![Image](https://github.com/Evandromck/opinio/assets/64655153/0d9c0c28-e7f3-4b4b-978f-69e4b1105fea)
 
 ## Próximos passos
 
