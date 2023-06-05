@@ -155,7 +155,7 @@ Além disso, o GitHub oferece opções de automação para os projetos. Posso de
 
 </details>
 
-<details open>
+<details>
 <summary>Quick Start</summary>
 
 <br/>
@@ -202,7 +202,7 @@ $ PORT=8080 yarn start:dev
 
 </details>
 
-<details open>
+<details >
 <summary>Swagger</summary>
      
 
