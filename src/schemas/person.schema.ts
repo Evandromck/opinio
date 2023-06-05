@@ -14,10 +14,10 @@ export class PersonSchema {
     description: 'ID do questionário',
     example: 1,
   })
-  @IsInt() // Define que a propriedade "age" deve ser um número inteiro
-  @Min(1) // Define o valor mínimo da propriedade "age" como 1
+  @IsInt() 
+  @Min(1) 
   
-  Pergunta: string; // Propriedade "age" do tipo number
+  Pergunta: string; 
 
   @ApiProperty({
     description: 'Array de respostas para as perguntas do questionário',
