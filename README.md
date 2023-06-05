@@ -406,4 +406,7 @@ Para isso, consulte os seguintes links da documentação:
      
 </details>
 
+![image](https://github.com/Evandromck/opinio/assets/64655153/03eff4d7-7602-4d27-ab2f-f559621839f6)
+
+
 
