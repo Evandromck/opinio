@@ -155,6 +155,12 @@ Além disso, o GitHub oferece opções de automação para os projetos. Posso de
 
 </details>
 
+<br/>
+<br/>
+
+
+## Instalação do Projeto
+
 <details>
 <summary>Quick Start</summary>
 
