@@ -178,10 +178,7 @@ Além disso, o GitHub oferece opções de automação para os projetos. Posso de
      -   Incluir as referências utilizadas na criação da documentação da aplicação de enquetes, como documentações oficiais de tecnologias utilizadas, artigos relevantes e outras fontes de informação.  
 
 </details>
-
 <br/>
-<br/>
-
 
 ## Instalação do Projeto
 
