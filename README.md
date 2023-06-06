@@ -9,7 +9,9 @@ Opinio é uma plataforma intuitiva que permite a criação rápida de enquetes p
 <br/>
 ## Planejamento do Projeto
 https://opinio-front-end.vercel.app/
+
 Você pode visualizar o projeto através [desse link](https://github.com/Evandromck/opinio-front-end).
+
 ## Planejamento do Projeto
 [link](https://github.com/Evandromck/opinio/assets/64655153/accbb4eb-80d6-49b8-9116-273f4469b0d7)
 
