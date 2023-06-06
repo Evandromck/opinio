@@ -3,6 +3,8 @@
 Opinio é uma plataforma intuitiva que permite a criação rápida de enquetes personalizadas. Com recursos flexíveis e uma interface amigável, os usuários podem associar perguntas e respostas, compartilhar as enquetes e analisar os resultados de maneira fácil. Obtenha insights valiosos e tome decisões informadas com Opinio. Experimente agora mesmo!
 
 ![image](https://github.com/Evandromck/sonic-meet-main/assets/64655153/cbf0b65f-d30b-467e-b2e9-25f3cc6d3253)
+![image](https://github.com/Evandromck/opinio/assets/64655153/1c8a5e55-890d-4021-aae1-cb1d5ad84c12)
+
 <br/>
 <br/>
 ## Planejamento do Projeto
