@@ -2,13 +2,16 @@
 
 Opinio é uma plataforma intuitiva que permite a criação rápida de enquetes personalizadas. Com recursos flexíveis e uma interface amigável, os usuários podem associar perguntas e respostas, compartilhar as enquetes e analisar os resultados de maneira fácil. Obtenha insights valiosos e tome decisões informadas com Opinio. Experimente agora mesmo!
 
-![image](https://github.com/Evandromck/sonic-meet-main/assets/64655153/cbf0b65f-d30b-467e-b2e9-25f3cc6d3253)
+
 ![image](https://github.com/Evandromck/opinio/assets/64655153/1c8a5e55-890d-4021-aae1-cb1d5ad84c12)
 
 <br/>
 <br/>
 ## Planejamento do Projeto
-![image](https://github.com/Evandromck/opinio/assets/64655153/accbb4eb-80d6-49b8-9116-273f4469b0d7)
+https://opinio-front-end.vercel.app/
+Você pode visualizar o projeto através [desse link](https://github.com/Evandromck/opinio-front-end).
+## Planejamento do Projeto
+[link](https://github.com/Evandromck/opinio/assets/64655153/accbb4eb-80d6-49b8-9116-273f4469b0d7)
 
 https://github.com/users/Evandromck/projects/5/views/1?visibleFields=%5B%22Title%22%2C%22Assignees%22%2C%22Status%22%2C45360960%2C45360961%2C%22Linked+pull+requests%22%2C%22Labels%22%2C%22Repository%22%5D
 
