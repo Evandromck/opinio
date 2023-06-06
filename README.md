@@ -4,18 +4,35 @@ Opinio é uma plataforma intuitiva que permite a criação rápida de enquetes p
 
 
 ![image](https://github.com/Evandromck/opinio/assets/64655153/1c8a5e55-890d-4021-aae1-cb1d5ad84c12)
-
 <br/>
 <br/>
+Você pode visualizar o Site através [desse link](https://opinio-front-end.vercel.app).
+<br/>
+
+<br/>
+
+## Front-End
+![image](https://github.com/Evandromck/opinio/assets/64655153/3a1a3e50-229e-40e7-8a3f-f5cfc8989382)
+<br/>
+<br/>
+Você pode visualizar o projeto Front-End através [desse link](https://github.com/Evandromck/opinio-front-end).
+<br/>
+<br/>
+
+
 ## Planejamento do Projeto
-https://opinio-front-end.vercel.app/
 
-Você pode visualizar o projeto através [desse link](https://github.com/Evandromck/opinio-front-end).
 
-## Planejamento do Projeto
-[link](https://github.com/Evandromck/opinio/assets/64655153/accbb4eb-80d6-49b8-9116-273f4469b0d7)
 
-https://github.com/users/Evandromck/projects/5/views/1?visibleFields=%5B%22Title%22%2C%22Assignees%22%2C%22Status%22%2C45360960%2C45360961%2C%22Linked+pull+requests%22%2C%22Labels%22%2C%22Repository%22%5D
+
+
+
+
+![image](https://github.com/Evandromck/opinio/assets/64655153/a113d4d7-ec5f-423e-900b-df5c7ae58a89)
+
+Você pode visualizar o o projeto através [Desse link](https://github.com/Evandromck/opinio/assets/64655153/accbb4eb-80d6-49b8-9116-273f4469b0d7)
+
+
 
 Olá! Gostaria de falar um pouco sobre os Projetos no GitHub. O Projects é uma ferramenta adaptável e flexível que me ajudou a planejar e acompanhar o trabalho de forma eficiente.
 
