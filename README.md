@@ -464,6 +464,6 @@ Passo 11: Selecione a API importada
 Na lista de APIs habilitadas, localize a API que você importou e clique nela para abrir a página de detalhes.
 
 Passo 12: Explore e utilize a API
-Na página de detalhes da API, você encontrará informações sobre como usar a API, documentação, exemplos de código e outras informações relevantes. Use esses recursos para aprender como integrar e utilizar a API no seu projeto.
+Na página de detalhes da API, você encontrará informações sobre como usar a API, documentação, exemplos de código e outras informações relevantes. 
 
 
